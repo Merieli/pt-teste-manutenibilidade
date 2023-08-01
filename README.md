@@ -7,4 +7,4 @@
   <a href="https://slides.com/"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
 </p>
 
-Apresentação sobre Testes para Tray.
+Apresentação sobre Testes.

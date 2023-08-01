@@ -139,16 +139,16 @@
 					</textarea>
 				</section>
 
-				<!-- TODO: Ajustar texto -->
 				<section data-state="two-cols-3/4-withimg" data-style="text-img-03">
 					<div class="container">
 						<div class="col--3-4 text-left" data-markdown>
 							<textarea data-template>
 								### Identificando testes ruins					
 								
-								- Dificuldade de compreensão do que está sendo testado
-								- Linguagem especifica ao software
-								- Multiplos conceitos por teste	
+								- Longo, complexo e difícil de entender
+								- Com lógica condicional								
+								- Multiplos conceitos por teste	*"Unidade misturado com Integração"*
+								- Precisa ser reescrito quando o código é refatorado
 							</textarea>
 						</div>
 						<div class="col" data-markdown>
@@ -246,6 +246,25 @@
 						<div class="col text-right" data-markdown>
 							<textarea data-template>
 								### Sintaxe Gherkin 								
+							</textarea>
+						</div>						
+					</div>
+				</section>
+
+				<section data-state="two-cols-1/2" data-style="text-01">
+					<div class="container">
+						<div class="col width-big" data-markdown>
+							<pre><code data-line-numbers data-ln-start-from="1">
+								test('Dado o mini carrinho com produtos
+								Quando aberto com uma sessão válida 
+								Então deve exibir produtos no carrinho', () => {
+									...
+								});
+							</code></pre>
+						</div>
+						<div class="col text-right" data-markdown>
+							<textarea data-template>
+								### Uso com Vite/Jest 								
 							</textarea>
 						</div>						
 					</div>

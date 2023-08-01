@@ -19,3 +19,7 @@
 .text-right {
   text-align: right;
 }
+
+.width-big {
+  width: 700px;
+}

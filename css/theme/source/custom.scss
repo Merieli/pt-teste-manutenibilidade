@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    align-items: center;    
+    gap: 2rem;
+}
+
+.col{
+    flex: 1;
+}
+
+.col--3-4{
+    flex: 2;
+}
+
+.text-left{
+    text-align: left;
+}
+
+
+.text-right{
+    text-align: right;
+}

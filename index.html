@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/dracula.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,7 +16,179 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
+				<section>
+					<h2><b>Teste com Propósito:</b> Maximizando a Manutenibilidade</h2>
+				</section>
+				<section >
+					<p>
+						"A cada 1000 linhas de código criadas, 70 novos bugs são criados e 15 serão descobertos pelo seu cliente." RODRIGUES, 2017
+						https://interaktiv.com.br/blog/post/o-custo-efetivo-dos-bugs-no-desenvolvimento-de-softwares 
+					</p>
+				</section>
+				<section data-markdown >
+					<textarea data-template>
+						
+						## Caso VCF no FBI - 2005
+						
+						<p align="left">
+							<b>Custo:</b> US$ 170 milhões 
+						</p>
+
+						<p align="left">
+							<b>Desastre:</b> Virtual Case File (VCF), um sistema em rede para rastrear casos criminais projetado para substituir os arquivos de papel com 730 mil linhas de código e centenas de erros.
+						</p>
+
+						<p align="left">
+							<b>Causa:</b> Má gestão, falhas de planejamento, tecnologia ultrapassada e mínimo de testes, resultou em um sistema complexo e inutilizável. 
+						</p>
+
+						---
+
+						## Manutenibilidade
+					
+						<p align="left">
+							Caracteriza a facilidade de modificação ou adaptação de um software "tempo médio requerido para efetivar a revisão do software para eliminar um erro".  
+							A etapa de manutenção pode consumir até 65% do custo total de um produto.
+						</p>
+						
+						---
+
+						## Para Manutenibilidade: *Testes*
+
+						- Garantem que o software está funcionando com qualidade
+						- Devem melhorar a manutenibilidade do sistema
+						- Devem manter o sistema estável
+
+						---
+
+						## Mas não basta possuir testes!					
+						
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## Hora do Quiz!
+						
+						Acesse **www.menti.com**
+
+						Com o código **5619 6829**
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						### Testes mal escritos
+
+						- Dificuldade de compreensão do que está sendo testado
+						- Linguagem especifica ao software
+						- Multiplos conceitos por teste
+
+						---
+
+
+						### Identificando testes ruins
+
+						**Testando um componente de Input de texto**
+
+						> Testa o texto gravado
+
+						> Deve salvar o texto no Recorder
+
+						> Deve chamar a função recordName ao escrever o texto e clicar em gravar
+
+
+						---
+
+						## Como escrever bons testes?
+
+						- Preparar o caminho feliz e o triste "inputs válidos/inválidos"
+						- Validar cada possível output
+						- Separar Arrange, Act e Assert
+						- Utilizar a técnica BDD
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						## Hora do Quiz!
+						
+						Acesse **www.menti.com**
+
+						Com o código **5619 6829**
+					</textarea>
+				</section>
+
+				<section data-markdown> 
+					<textarea data-template>
+
+						## BDD (Behavior Driven Development)
+
+						Desenvolvimento orientado a comportamento, uma evolução do TDD.
+						
+						Tem por objetivo incentivar a colaboração com todos falando a mesma linguagem para garantir a qualidade.
+
+						**[IMAGEM]**
+
+						---
+
+						## Sintaxe Gherkin
+
+						**Dado** (Given)
+						
+						**Quando** (When)
+
+						**Então** (Then).
+
+						**E** (And), **Mas** (But)
+
+						> **Dado** contexto **Quando** eventos **Então** resultado
+
+						---
+
+						## Como funciona o BDD?
+
+						[IMAGEM]
+
+
+						---
+
+						## Como usar o Gherkin para melhorar os testes?
+
+						Integração/componente + unidade:
+						"Deve chamar a função recordName ao escrever o texto e clicar em gravar"
+
+
+						Unidade:
+						"Deve chamar a função recordName e a api ao executar" 
+
+
+
+
+						Reescrevendo com Gherkin:
+						Integração/componente:
+						"Dado o input Quando digitar um nome e clicar em gravar Então o nome deve ser salvo na lista 'Names' "
+
+
+						Unidade:
+						"Dado a função recordName Quando executada Então deve chamar a API"
+
+
+
+
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+
+						Text going to the right <!-- .element: style="float: right; width: 40%" -->
+	
+						Text going on the left column <!-- .element: style="width: 40%" -->
+					</textarea>
+				</section>
 				<section>Slide 2</section>
 			</div>
 		</div>
